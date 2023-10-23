@@ -1,7 +1,184 @@
-:root{
-    --fondoColor: linear-gradient(270deg, rgba(65,170,175,1) 35%, rgba(54,75,102,1) 100%);
+:root {
+    --fondoColor: linear-gradient(270deg, rgba(65, 170, 175, 1) 35%, rgba(54, 75, 102, 1) 100%);
 }
 
-body{
+html {
+    
+}
+
+body {
     background: var(--fondoColor);
 }
+
+#wrapper {
+    width: 95%;
+    margin-left: 2.5%;
+
+}
+a, li{
+    text-decoration: none !important;
+    list-style-type: none;
+}
+
+/* MENU HAMBURGUESA */
+
+#menu {
+    z-index: 2;
+}
+
+#menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: #ffffff;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+.hamburger {
+    transition: 0.3s ease;
+    display: none;
+}
+
+.hamburger ul {
+    padding: 0 22px;
+}
+
+.hamburger li {
+    list-style: none;
+    padding: 12px 0;
+}
+
+.hamburger li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.hamburger li a:hover {
+    font-weight: bold;
+}
+
+.menu-bg,
+#menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1000;
+}
+
+.menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #356cd3, #3499d4);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.change {
+    display: block;
+}
+
+.change .bar {
+    background-color: white;
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-61%, -13%);
+}
+
+@media (min-width: 960px) {
+    #menu {
+        display: none;
+    }
+
+}
+
+@media (max-width: 960px) {
+
+    .nav__menu {
+        display: none !important;
+    }
+}
+
+/* TERMINA MENU HAMBURGUESA */
+.nav1 {
+    width: 100%;
+    height: 125px;
+    /* background: blue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 310px;
+}
+
+.logo>img {
+    width: 100%;
+}
+
+.nav__menu {
+    width: 88%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* MENU LINKS */
+
+.menuLink>a {
+    position: relative;
+    color: white;
+}
+
+.text-style-underline {
+    background: linear-gradient(84deg, rgb(255, 255, 255) 0%, rgb(51, 122, 255) 100%);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    transition: background-size 300ms ease;
+}
+
+.text-style-underline:hover {
+    background-size: 100% 3px;
+}
+
+/* TERMINA MENU LINKS */
