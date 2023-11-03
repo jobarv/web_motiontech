@@ -59,12 +59,14 @@
             <section class="carrusel">
                 <div class="carrusel__title">
                     <h2>Más de 10 años de experiencia</h2>
-                    <p>Nuestra empresa se enfoca en ofrecer soluciones para la industria en control de potencia a través
+                    <p class="nosotros">Nuestra empresa se enfoca en ofrecer soluciones para la industria en control de
+                        potencia a través
                         de nuestros proveedores, contamos con más de 10 años de experiencia.</p>
-                    <p>
+                    <p class="nosotros">
                         Además desarrollamos soluciones en el giro de Internet of Things (IoT).
                     </p>
-                    <p> Estamos comprometidos con nuestros clientes para ofrecerle soluciones a medida de sus
+                    <p class="nosotros"> Estamos comprometidos con nuestros clientes para ofrecerle soluciones a medida
+                        de sus
                         necesidades.</p>
                 </div>
                 <div id="carouselExampleIndicators" class="carousel slide" style="background-color: var(--fondoCards);
@@ -129,7 +131,7 @@
                         <img class="productos__img" src="./img/producto3.png" alt="producto3">
                         <div class="productos__sombreado">
 
-                            <h2 class="productos__titulo">Ingeniería Básica y Procesos</h2>
+                            <h2 class="productos__titulo">Ingeniería Básica de Procesos Químicos</h2>
                         </div>
                     </div>
                     <div class="productos__item">
@@ -142,6 +144,31 @@
                 </div>
         </div>
         </section>
+
+        <section class="formulario">
+            <h2>Contáctanos</h2>
+            <form action="https://formsubmit.co/ventas@motiontech.com.mx" method="POST">
+                <div class="form__input">
+
+                    <input placeholder="Su Nombre Completo" type="text" id="name" name="nombre" required>
+                    <!-- </div> -->
+                    <!-- <div class="form__input"> -->
+
+                    <input placeholder="Su Teléfono" type="text" id="phone" name="telefono" required>
+                    <!-- </div> -->
+                    <!-- <div class="form__input"> -->
+
+                    <input placeholder="Su Correo" type="string" id="email" name="correo" required>
+                </div>
+                <!-- <div class="form__input"> -->
+
+                <textarea placeholder="¿Cómo le podemos ayudar?" id="message" cols="30" rows="10" name="mensaje"
+                    required></textarea>
+                <!-- </div> -->
+                <button type="submit">Enviar Información</button>
+            </form>
+        </section>
+
         <footer>
 
         </footer>
