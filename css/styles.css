@@ -1,7 +1,7 @@
 /* GLOBALES */
 :root {
   --fondoColor: linear-gradient(270deg, rgba(65, 170, 175, 1) 35%, rgba(54, 75, 102, 1) 100%);
-  --fondoCards: #184aa1;
+  --fondoCards: #2a4b97;
 }
 
 html {}
@@ -18,7 +18,7 @@ body {
 }
 
 h1,
-h2 {
+h2,p {
   color: white !important;
 }
 
@@ -55,7 +55,9 @@ main {
   position: absolute;
   margin-top: -109px;
 }
-
+section{
+  margin-top: 53px;
+}
 
 /* MENU HAMBURGUESA */
 #menu {
@@ -191,7 +193,7 @@ main {
   display: flex;
   justify-content: space-evenly;
   z-index: 10;
-  margin-top: -24rem;
+  margin-top: -41rem;
   font-size: 30px;
 }
 
@@ -223,6 +225,19 @@ main {
 /* TERMINA MENU LINKS */
 /* INICIA PRODUCTOS */
 
+.carrusel{
+  display: flex;
+  justify-content: space-evenly;
+}
+.carrusel__title{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 28px;
+  text-align: center;
+}
+
 .productos {
 
 
@@ -245,7 +260,7 @@ main {
   position: relative;
   cursor: pointer;
   padding: 1em;
-  background: #1996b3;
+  background: var(--fondoCards);
   border-radius: 23px;
 
 }
@@ -298,6 +313,9 @@ main {
   .productos__titulo {
 
     width: 95%;
+  }
+  .carrusel{
+    flex-direction: column;
   }
 }
 
