@@ -414,10 +414,16 @@ color: var(--fondoCards);
 /* FOOTER */
 
 footer{
+  height: 100%;
   margin-top: 50px;
   background-color: var(--fondoCards);
 }
 footer>img{
   width: 20%;
+}
+@media (max-width: 960px) {
+  footer>img{
+    width: 50%;
+  }
 }
 /* TERMINA FOOTER  */
