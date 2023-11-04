@@ -342,9 +342,13 @@ section {
 form {
   width: 100%;
   height: 100%;
+  gap: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "A B";
+  justify-items: center;
+  justify-content: center;
+  grid-template-areas: "inputs textarea"
+                       "btn btn";
 
 }
 
@@ -354,17 +358,23 @@ form {
 }
 
 .form__input {
+  gap: 20px;
+  grid-area: "inputs";
   padding: 15px;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-items: center;
   width: 90%;
-  grid-area: "A";
 }
 
 textarea {
-  grid-area: "B";
+  grid-area: "textarea";
+  font-size: 20px !important;
+  border-radius: 9px;
+  padding: 17px;
+  width: 69%;
 }
 
 input {
@@ -373,4 +383,41 @@ input {
 
 }
 
+.btn--submit {
+  grid-area: "btn";
+  border-radius: 11px;
+  background-color: var(--fondoCards);
+  color: white;
+  font-size: 23px;
+  padding: 12px;
+}
+
+.btn--submit:hover{
+background-color: white;
+color: var(--fondoCards);
+}
+@media (max-width: 960px) {
+  form {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "inputs"
+                        "textarea"
+                          "btn";
+
+  }
+  textarea{
+    width: 88%;
+  }
+
+}
+
 /* TERMINA FORMULARIO  */
+/* FOOTER */
+
+footer{
+  margin-top: 50px;
+  background-color: var(--fondoCards);
+}
+footer>img{
+  width: 20%;
+}
+/* TERMINA FOOTER  */
