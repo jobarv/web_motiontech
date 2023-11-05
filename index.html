@@ -28,9 +28,10 @@
             </div>
             <nav class="hamburger" id="nav">
                 <ul>
-                    <li><a href="#productos">Productos</a></li>
-                    <li><a href="#footer">Servicios</a></li>
+                    <li><a href="#productos">Productos y <br> Servicios</a></li>
+                    <!-- <li><a href="#footer">Servicios</a></li> -->
                     <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#footer">Descargables</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
@@ -40,12 +41,12 @@
 
         <div class="nav__menu">
             <ul class="nav__list">
-                <li class="menuLink text-style-underline"><a href="#proyectos">Productos</a></li>
-                <li class="menuLink text-style-underline"><a href="#footer">Servicios</a></li>
-                <li class="menuLink text-style-underline"><a href="#clientes">Nosotros</a></li>
-                <li>
-                    <a class="btnContacto" href="#contacto">Contacto</a>
-                </li>
+                <li class="menuLink text-style-underline"><a href="#productos">Productos y Servicios</a></li>
+                <!-- <li class="menuLink text-style-underline"><a href="#footer">Servicios</a></li> -->
+                <li class="menuLink text-style-underline"><a href="#nosotros">Nosotros</a></li>
+                <li class="menuLink text-style-underline"><a href="#footer">Descargables</a></li>
+                <li class="menuLink text-style-underline"><a href="#contacto">Contacto</a></li>
+
             </ul>
         </div>
 
@@ -56,7 +57,7 @@
     <main>
         <div id="wrapper">
 
-            <section class="carrusel">
+            <section id="nosotros" class="carrusel">
                 <div class="carrusel__title">
                     <h2>Más de 10 años de experiencia</h2>
                     <p class="nosotros">Nuestra empresa se enfoca en ofrecer soluciones para la industria en control de
@@ -102,7 +103,7 @@
                     </button>
                 </div>
             </section>
-            <section class="contain">
+            <section id="productos" class="contain">
                 <h2>Nuestros Productos y Servicios</h2>
 
                 <div class="productos">
@@ -145,7 +146,7 @@
         </div>
         </section>
 
-        <section class="formulario">
+        <section id="contacto" class="formulario">
             <h2 style="text-align: center;">Contáctanos</h2>
             <form action="https://formsubmit.co/ventas@motiontech.com.mx" method="POST">
                 <div class="form__input">
@@ -169,10 +170,39 @@
             </form>
         </section>
 
-        <footer>
-            <img src="./img/logo.png" alt="logo_Footer">
+        <footer id="footer">
+
+            <img class='footer__img' src="./img/logo.png" alt="logo_Footer">
+
+            <div class="footer__enlaces">
+                <!-- <h3>Nuestros Enlaces</h3> -->
+                <ul>
+                    <li><a href="#">Descargables</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#productos">Nuestros Productos y Servicios</a></li>
+                    <li><a href="https://wa.me/+528115028945">Contacta a un Especialista</a></li>
+                </ul>
+            </div>
+            <div class="footer__redes">
+                <h3>Nuestras Redes</h3>
+                <ul>
+                    <li><a href=""><i><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                                    <path d="M8 11l0 5" />
+                                    <path d="M8 8l0 .01" />
+                                    <path d="M12 16l0 -5" />
+                                    <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                                </svg></i></a></li>
+                </ul>
+            </div>
+            </section>
         </footer>
-        
+
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

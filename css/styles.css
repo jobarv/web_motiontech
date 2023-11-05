@@ -2,6 +2,7 @@
 :root {
   --fondoColor: linear-gradient(270deg, rgba(65, 170, 175, 1) 35%, rgba(54, 75, 102, 1) 100%);
   --fondoCards: #2a4b97;
+  --enlacesfooter: blue;
 }
 
 html {}
@@ -19,6 +20,7 @@ body {
 
 h1,
 h2,
+h3,
 p {
   color: white !important;
 }
@@ -26,19 +28,14 @@ p {
 .nosotros {
   font-size: 19px;
 }
-
-a,
-li {
+li, a{
+  list-style-type: none !important;
   text-decoration: none !important;
-  list-style-type: none;
-}
 
-.btnContacto {
-  color: #3499d4;
 }
-
-.btnContacto:hover {
+.nav__menu>ul>li>a{
   color: white;
+
 }
 
 .contain {
@@ -348,7 +345,7 @@ form {
   justify-items: center;
   justify-content: center;
   grid-template-areas: "inputs textarea"
-                       "btn btn";
+    "btn btn";
 
 }
 
@@ -392,19 +389,21 @@ input {
   padding: 12px;
 }
 
-.btn--submit:hover{
-background-color: white;
-color: var(--fondoCards);
+.btn--submit:hover {
+  background-color: white;
+  color: var(--fondoCards);
 }
+
 @media (max-width: 960px) {
   form {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "inputs"
-                        "textarea"
-                          "btn";
+      "textarea"
+      "btn";
 
   }
-  textarea{
+
+  textarea {
     width: 88%;
   }
 
@@ -413,17 +412,59 @@ color: var(--fondoCards);
 /* TERMINA FORMULARIO  */
 /* FOOTER */
 
-footer{
+footer {
   height: 100%;
   margin-top: 50px;
   background-color: var(--fondoCards);
+  display: flex;
+  justify-content: space-evenly;
 }
-footer>img{
+
+.footer__img {
   width: 20%;
 }
+
+.footer__enlaces>ul>li>a {
+  margin-top: 20px;  
+  padding: 20px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.footer__enlaces>ul>li>a:hover{
+  background-color: white;
+  color: var(--enlacesfooter);
+  border-radius: 50px;
+  transform: scale(1.3);
+}
+.footer__redes{
+  margin-top: 20px;
+  padding: 20px;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon:hover{
+  transform: scale(1.5);
+}
+
 @media (max-width: 960px) {
-  footer>img{
-    width: 50%;
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__img {
+    width: 60%;
+  }
+  /* .footer__enlaces>ul>li>a{
+    margin: 0;
+  } */
+  .footer__enlaces>ul>li>a:hover{
+    transform: scale(1.2);
   }
 }
+
 /* TERMINA FOOTER  */
