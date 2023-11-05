@@ -64,6 +64,23 @@ main {
 section {
   margin-top: 53px;
 }
+/* CHAT */
+.chat {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+.whats__icon {
+  margin: 0 -80px;
+  padding: 10px;
+  background: blue;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 10;
+}
+
 
 /* MENU HAMBURGUESA */
 #menu {
@@ -434,10 +451,11 @@ footer {
   color: white;
 }
 .footer__enlaces>ul>li>a:hover{
-  background-color: white;
+  /* background-color: white; */
+  color: white !important;
   color: var(--enlacesfooter);
   border-radius: 50px;
-  transform: scale(1.3);
+  transform: scale(1.5);
 }
 .footer__redes{
   margin-top: 20px;
